@@ -1,0 +1,73 @@
+@media (max-width: 400px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+        .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+        .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

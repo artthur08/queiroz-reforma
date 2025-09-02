@@ -1,0 +1,637 @@
+/* style.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* Header */
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent; /* começa transparente */
+  transition: background 0.3s ease, padding 0.3s ease;
+  z-index: 1000;
+}
+
+header.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111; /* cor sólida ao rolar */
+  padding: 15px 30px; /* opcional: encolhe um pouco */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#log {   
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #1db9b1;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/*----- HOME -----*/
+
+.efeito-txt-topo {
+    visibility: hidden;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    text-align: center; /* Alinha o texto */
+}
+
+.background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: -1;
+}
+
+.background-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta a opacidade para escurecer */
+}
+
+.chevron-down {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.4s ease-out;
+    opacity: 0;
+    user-select: none;
+}
+
+.chevron-down img {
+    width: 20px;
+}
+
+/* Animação para o movimento suave do chevron */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+/*----- EMPRESAS -----*/
+
+.slogan {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======== ESTILO DA SESSÃO EMPRESAS ======== */
+.empresas {
+  padding: 100px 55px;
+  background: #fff;
+}
+
+.container-empresas {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; 
+}
+
+
+.empresa-1, .empresa-2, .empresa-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+.image-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.image-left img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.infos-empresa {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infos-empresa h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.h1-estru:hover {
+    color: #0199ff;
+}
+
+.h1-golden:hover {
+    color: #ff9901;
+}
+
+.h1-manu:hover {
+    color: #ff4901;
+}
+
+.infos-empresa p {
+    margin-top: 30px;
+    justify-content: space-between;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 24px;
+}
+
+.button-info button {
+    background-color: black;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-estrutural {
+    color: #0199ff;
+}
+
+.button-golden {
+    color: #ff9901;
+}
+
+.button-manutencao {
+    color: #ff4901;
+}
+
+.button-info button:hover {
+    transform: scale(1.1);
+}
+
+.img-hover {
+    position: relative; 
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.img-hover:hover {
+    filter: grayscale(0%);
+}
+
+.img-hover-2 {
+    position: relative; 
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.img-hover-2:hover {
+    filter: grayscale(0%);
+}
+
+/* correção de espaçamentos das outras empresas */
+.empresa-2 {
+    margin-top: 10px;
+}
+
+.empresa-3 {
+    margin-top: 10px;
+}
+
+.empresa-3 .text-sobre {
+    margin-top: 100px;
+}
+
+.empresa-3 img {
+    margin-top: 10px;
+}
+
+
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 992px) {
+  .empresa-1, .empresa-2, .empresa-3 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .empresa-2 {
+    flex-direction: column;
+  }
+
+  .image-left, .infos-empresa {
+    max-width: 100%;
+  }
+
+  .text-sobre {
+    text-align: center;
+  }
+
+  .button-info {
+    text-align: center;
+  }
+}
+
+
+
+/*----- PROJECTS -----*/
+.projects {
+    background-color: black;
+    margin-top: 80px;
+    padding: 25px 0 100px 0;
+}
+
+.logo-queiroz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-queiroz img {
+    margin-top: 140px ;
+}
+
+.projetos h1 {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.texts-projects { 
+    margin-top: 70px;
+}
+
+.container-slider {
+  margin-top: 250px;
+  width: 100%;
+  overflow: visible; /* melhor que visible */
+  position: relative;
+  display: flex;
+}
+
+.container-track {
+  display: flex;
+  opacity: 1;
+  gap: 20px;
+  pointer-events: all;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+  display: flex;
+  gap: 20px;
+  
+}
+
+ .container-track:hover {
+    filter: grayscale(0%);
+    transform: scale(2.1);
+    z-index: 2;
+} 
+
+.container-track img {
+  width: 360px;
+  margin-right: 20px;
+  border-radius: 8px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: grayscale(100%);
+    width: 360px;
+  border-radius: 8px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: grayscale(100%);
+}
+
+.container-track img.active {
+  transform: scale(1.4);
+  filter: grayscale(0%);
+  z-index: 10;
+  position: relative;
+}
+
+
+/* tirar grayscale ao passar o mouse na imagem */
+.container-track img:hover {
+  transform: scale(2.2);
+  filter: grayscale(0%);
+  z-index: 100; 
+  position: relative;
+} 
+
+/* animação do movimento */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
+
+
+#prev-button, #next-button {
+    /* margin-top: 400px; */
+    margin: 200px 500px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+.more-info {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 200px;
+    margin-right: 70px;
+}
+
+.numbers {
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+.number {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.numbers h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+.start-item h4 {
+    color: white;
+    font-size: 94px;
+}
+
+.start-item p {
+    color: white;
+    font-size: 24px;
+}
+
+.p-client {
+    margin-left: 75px;
+}
+
+.cliente-10 {
+    margin-left: 20px;
+}
+
+.serv-500 {
+    margin-left: 35px;
+}
+
+.avali-99 {
+    margin-left: 42px;
+}
+
+.p-avali {
+    margin-left: 75px;
+}
+
+.cliente-happy {
+    margin-left: 80px;
+}
+
+/* FOOTER */
+
+  footer {
+    background-color: #222222;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* centraliza todo conteúdo */
+    align-items: center;
+    padding: 80px 40px; /* mais espaço interno */
+    gap: 60px; /* mais respiro entre as seções */
+  }
+
+  .footer-top {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+
+  .footer-top img {
+    width: 260px;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Menu de navegação */
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-nav a:hover {
+    color: #1db9b1;
+  }
+
+  /* Informações em colunas */
+  .footer-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .footer-info div {
+    min-width: 200px;
+  }
+
+  .footer-info h4 {
+    color: #1db9b1;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .footer-info a {
+    color: #1db9b1;
+    text-decoration: none;
+  }
+
+  /* Redes sociais */
+  .footer-social {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-social a {
+    color: #fff;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+
+  .footer-social a:hover {
+    color: #1db9b1;
+    transform: scale(1.2);
+  }
+
+  /* Faixa inferior */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    color: #aaa;
+    gap: 10px;
+  }
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* 🔹 MOBILE & TABLET: imagens em cima e texto embaixo */
+@media (max-width: 1023px) {
+  .empresa-1,
+  .empresa-2,
+  .empresa-3 {
+    flex-direction: column !important; /* força coluna */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .empresa-2 .infos-empresa,
+  .empresa-3 .infos-empresa {
+    margin-top: 0; /* remove margens aplicadas no desktop */
+  }
+
+  .empresa-3 img {
+    margin-top: 0;
+  }
+
+  .button-info {
+    display: flex;
+    justify-content: center;
+  }
+}
+

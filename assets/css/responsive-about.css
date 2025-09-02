@@ -1,0 +1,381 @@
+@media (max-width: 400px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container-sobre {
+        position: relative;
+        transform: translateX(265px) !important;
+    }
+
+    .text-about {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 180% !important;
+        transform: translateX(30px) !important;
+    }
+
+    .text-2-about p{
+        display: none;
+    }
+
+    .numbers {
+        margin-left: -90px;
+        margin-top: 300px;
+    }
+
+    .numbers h1 {
+        margin-top: 400px;
+        position: relative;
+        font-size: 35px;
+        transform: translateX(60px);
+        margin-bottom: 100px;
+    }
+
+    .number h4{
+        font-size: 80px;
+    }
+
+    .start-item {
+        position: relative;
+        transform: translateX(50px);
+    }
+
+    .cliente-happy {
+        transform: translateX(-80px);
+    }
+
+    .nosso-time h1 {
+        font-size: 40px;
+    }
+
+    .number {
+        transform: translateX(25px);
+    }
+
+    .img-sobre-right img {
+        width: 340px; /* Define a largura máxima */
+        height: 200px; /* Ajuste conforme necessário */
+    }
+
+    .img-sobre-right {
+        transform: translateX(45px);
+    }
+}
+
+@media (max-width: 500px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container-sobre {
+        position: relative;
+        transform: translateX(265px) !important;
+    }
+
+    .text-about {
+        position: relative;
+        text-align: center;
+        margin: 0px !important;
+        max-width: 180% !important;
+        transform: translateX(-265px) !important;
+    }
+
+    .text-2-about p{
+        display: none;
+    }
+
+    .numbers {
+        margin-left: -65px;
+        margin-top: 300px;
+    }
+
+    .numbers h1 {
+        margin-top: 400px;
+        position: relative;
+        font-size: 35px;
+        transform: translateX(50px);
+        margin-bottom: 100px;
+    }
+
+    .number h4{
+        font-size: 80px;
+        
+    }
+
+    .start-item {
+        position: relative;
+        transform: translateX(60px);
+    }
+
+    .cliente-happy {
+        transform: translateX(-80px);
+    }
+
+    .nosso-time h1 {
+        font-size: 40px;
+    }
+
+    .number {
+        transform: translateX(40px);
+    }
+
+    .img-sobre-right img {
+        width: 340px; /* Define a largura máxima */
+        height: 200px; /* Ajuste conforme necessário */
+    }
+
+    .img-sobre-right {
+        transform: translateX(95px);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .text-about {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 200% !important;
+        transform: translateX(-105px);
+    }
+
+    .img-sobre-right {
+        transform: translateX(32px);
+        margin-bottom: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .text-about {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 200% !important;
+        transform: translateX(-105px);
+    }
+
+    .numbers {
+        margin-left: -90px;
+    }
+
+    .numbers h1 {
+        position: relative;
+        font-size: 35px;
+        transform: translateX(30px);
+        margin-bottom: 100px;
+    }
+
+    .number h4{
+        font-size: 80px;
+    }
+
+    .start-item {
+        position: relative;
+        transform: translateX(-5px);
+    }
+
+    .nosso-time h1 {
+        font-size: 40px;
+    }
+
+    .number {
+        transform: translateX(25px);
+    }
+
+    .img-sobre-right img {
+        width: 340px; /* Define a largura máxima */
+        height: 200px; /* Ajuste conforme necessário */
+    }
+
+    .img-sobre-right {
+        transform: translateX(-20px);
+        margin-bottom: 300px;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container-sobre {
+        position: relative;
+        transform: translateX(265px) !important;
+    }
+
+
+    .text-about {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 200% !important;
+        transform: translateX(-105px);
+    }
+
+    .numbers {
+        margin-left: -90px;
+    }
+
+    .numbers h1 {
+        position: relative;
+        margin-top: 450px;
+        font-size: 35px;
+        transform: translateX(60px);
+        margin-bottom: 100px;
+    }
+
+    .number h4{
+        font-size: 80px;
+    }
+
+    .start-item {
+        position: relative;
+        transform: translateX(-5px);
+    }
+
+    .nosso-time h1 {
+        font-size: 40px;
+    }
+
+    .number {
+        transform: translateX(65px);
+    }
+
+    .img-sobre-right img {
+        width: 340px; /* Define a largura máxima */
+        height: 200px; /* Ajuste conforme necessário */
+    }
+
+    .img-sobre-right {
+        transform: translateX(25px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /*----- HEADER -----*/
+
+    .nav-item {
+        display: none;
+    }
+    
+    .text-about {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 200%;
+        margin-left: -380px;
+    }
+
+    .text-about h1, .text-about h2, .text-about p {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .text-about p {
+        margin-top: 30px;
+    }
+
+    .img-sobre-right {
+        margin-left: -375px;
+    }
+
+
+    .img-sobre-left{
+        display: none;
+    }
+
+    .text-2-about {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-2-about p {
+        text-align: center;
+        margin: 10px auto;text-align: center;
+        margin: 10px auto;
+    }
+
+    .numbers {
+        margin-top: -300px;
+    }
+
+    .numbers h1 {
+        margin-left: -560px;
+        margin-bottom: 100px;
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -250px;
+    }
+
+    .nosso-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .nosso-time p {
+        justify-content: space-between;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .sobre-nos {
+        display: flex;
+        padding: 195px 200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    
+    .nav-bar {
+        gap: 423px;
+    }
+    
+    .sobre-nos {
+        display: flex;
+        padding: 195px 100px;
+    }
+    }

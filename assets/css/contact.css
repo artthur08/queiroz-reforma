@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* Header */
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black; /* começa transparente */
+  transition: background 0.3s ease, padding 0.3s ease;
+  z-index: 1000;
+}
+
+header.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111; /* cor sólida ao rolar */
+  padding: 15px 30px; /* opcional: encolhe um pouco */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#log {   
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #1db9b1;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.additional {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1200px;
+    flex-wrap: wrap; /* garante que fique em coluna no mobile */
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+.contato-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* espaçamento entre os itens */
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contato-item i {
+  color: #25D366; /* verde no WhatsApp, ou preto para os outros */
+}
+
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-icon.email {
+    gap: 10px;
+}
+
+.contato-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+
+/* Estilo específico para o WhatsApp */
+.contato-item.whatsapp i {
+    color: #25D366; /* Cor oficial do WhatsApp */
+    font-size: 18px;
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local h1 {
+    margin-bottom: 50px !important;
+}
+
+.local-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* espaçamento entre os itens */
+}
+
+
+.footer {
+    background-color: black;
+}
+
+.links {
+    display: flex;
+    gap: 1100px;
+}
+
+
+.logo-footer {
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-footer {
+    display: flex;
+    margin-top: 40px;
+}
+
+.whatsappft {
+    position: fixed;
+    bottom: 10px;  /* distância da base da janela */
+    right: 20px;    /* canto esquerdo da janela */
+    z-index: 9999; /* garante que fique por cima dos elementos */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsappft:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    margin: 0 20px 0 20px;
+    position: relative;
+}
+
+.linha {
+    border: none;
+    height: 2px;
+    background-color: rgb(104, 100, 100);
+    width: calc(100% - 2px); /* 100% da largura menos 40px (20px de cada lado) */
+    margin: 0 auto; /* Centraliza a linha horizontalmente */
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* centraliza todo conteúdo */
+    align-items: center;
+    padding: 80px 40px; /* mais espaço interno */
+    gap: 60px; /* mais respiro entre as seções */
+  }
+
+  .footer-top {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+
+  .footer-top img {
+    width: 260px;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Menu de navegação */
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-nav a:hover {
+    color: #1db9b1;
+  }
+
+  /* Informações em colunas */
+  .footer-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .footer-info div {
+    min-width: 200px;
+  }
+
+  .footer-info h4 {
+    color: #1db9b1;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .footer-info a {
+    color: #1db9b1;
+    text-decoration: none;
+  }
+
+  /* Redes sociais */
+  .footer-social {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-social a {
+    color: #fff;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+
+  .footer-social a:hover {
+    color: #1db9b1;
+    transform: scale(1.2);
+  }
+
+  /* Faixa inferior */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    color: #aaa;
+    gap: 10px;
+  }

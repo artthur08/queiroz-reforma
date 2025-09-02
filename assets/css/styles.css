@@ -15,7 +15,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  padding: 20px 30px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ header.header-scrolled {
   top: 0;
   left: 0;
   background: #111; /* cor sólida ao rolar */
-  padding: 15px 30px; /* opcional: encolhe um pouco */
+  padding: 20px 50px; /* opcional: encolhe um pouco */
 }
 
 .logo {
@@ -149,7 +149,7 @@ header.header-scrolled {
 
 /* ======== ESTILO DA SESSÃO EMPRESAS ======== */
 .empresas {
-  padding: 100px 55px;
+  padding: 100px 50px;
   background: #fff;
 }
 

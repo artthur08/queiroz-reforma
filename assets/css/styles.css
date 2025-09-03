@@ -635,3 +635,50 @@ header.header-scrolled {
   }
 }
 
+@media (max-width: 360px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .slogan {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .empresa-2 .infos-empresa {
+        transform: translateY(80px) !important;
+    }
+
+    .empresa-2 {
+        transform: translateX(-50px);
+    }
+
+    .infos-empresa {
+        transform: translateX(-50px);
+    }
+
+    .text-sobre {
+        padding: 20px;
+    }
+
+    .img-hover-2 {
+        transform: translateY(-10px);
+    }
+
+    .number {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+
+    .numbers h1 {
+        margin-top: 250px;
+        font-size: 20px;
+    }
+
+
+}

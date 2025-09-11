@@ -159,7 +159,6 @@ header.header-scrolled {
   gap: 100px; 
 }
 
-
 .empresa-1, .empresa-2, .empresa-3 {
   display: flex;
   align-items: center;
@@ -390,7 +389,7 @@ header.header-scrolled {
 
 /* tirar grayscale ao passar o mouse na imagem */
 .container-track img:hover {
-  transform: scale(2.2);
+  transform: scale(1.5);
   filter: grayscale(0%);
   z-index: 100; 
   position: relative;

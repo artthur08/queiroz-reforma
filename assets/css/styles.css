@@ -281,16 +281,16 @@ header.header-scrolled {
 }
 /* Fundo diferente para cada bloco */
 .empresa-1 {
-  background-color: #f5f5f5; /* cor clara */
+  background-color: #F4F2EC; /* cor clara */
 
 }
 
 .empresa-2 {
-  background-color: #bdbdbd6e; /* azul clarinho */
+  background-color: #DCD9D0; /* azul clarinho */
 }
 
 .empresa-3 {
-  background-color: #58585854; /* laranja clarinho */
+  background-color: #B2AFA8; /* laranja clarinho */
 }
 
 /* correção de espaçamentos das outras empresas */

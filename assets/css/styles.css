@@ -266,6 +266,33 @@ header.header-scrolled {
     filter: grayscale(0%);
 }
 
+.empresa-1, .empresa-2, .empresa-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  /* RESOLUÇÃO DO PROBLEMA */
+  width: 100vw;                 /* ocupa toda a largura da tela */
+  margin-left: calc(-50vw + 50%); /* centraliza e expande até as bordas */
+  
+  padding: 100px 50px;          /* espaçamento interno */
+  box-sizing: border-box;
+}
+/* Fundo diferente para cada bloco */
+.empresa-1 {
+  background-color: #f5f5f5; /* cor clara */
+
+}
+
+.empresa-2 {
+  background-color: #bdbdbd6e; /* azul clarinho */
+}
+
+.empresa-3 {
+  background-color: #58585854; /* laranja clarinho */
+}
+
 /* correção de espaçamentos das outras empresas */
 .empresa-2 {
     margin-top: 10px;

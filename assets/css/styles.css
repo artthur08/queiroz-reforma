@@ -149,22 +149,24 @@ header.header-scrolled {
 
 /* ======== ESTILO DA SESSÃO EMPRESAS ======== */
 .empresas {
-  padding: 100px 50px;
+  padding: 100px 50px 0;
   background: #fff;
+  margin: 0;
 }
 
 .container-empresas {
   display: flex;
   flex-direction: column;
-  gap: 100px; 
+  gap: 0px;
 }
 
 .empresa-1, .empresa-2, .empresa-3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 0px;
 }
+
 
 
 .image-left {
@@ -286,21 +288,14 @@ header.header-scrolled {
 }
 
 .empresa-2 {
-  background-color: #DCD9D0; /* azul clarinho */
+  background-color: #fffdf6; /* azul clarinho */
 }
 
 .empresa-3 {
-  background-color: #B2AFA8; /* laranja clarinho */
+  background-color: #F4F2EC; /* laranja clarinho */
 }
 
 /* correção de espaçamentos das outras empresas */
-.empresa-2 {
-    margin-top: 10px;
-}
-
-.empresa-3 {
-    margin-top: 10px;
-}
 
 .empresa-3 .text-sobre {
     margin-top: 100px;
@@ -341,7 +336,6 @@ header.header-scrolled {
 /*----- PROJECTS -----*/
 .projects {
     background-color: black;
-    margin-top: 80px;
     padding: 25px 0 100px 0;
 }
 

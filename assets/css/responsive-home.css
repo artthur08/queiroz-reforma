@@ -459,7 +459,7 @@ html, body {
         width: 450px;
         z-index: 1;
         height: auto;
-        transform: translateX(-220px);
+        transform: translateX(-230px);
     }
 
     .empresa-2 .text-sobre{
